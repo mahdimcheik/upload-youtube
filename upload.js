@@ -23,6 +23,8 @@ const authUrl = oauth2Client.generateAuthUrl({
   scope: "https://www.googleapis.com/auth/youtube.upload",
 });
 
+console.log(authUrl);
+
 // Set up multer for handling file uploads
 const upload = multer({ dest: "uploads/" }); // Choose the folder for temporary file storage
 
